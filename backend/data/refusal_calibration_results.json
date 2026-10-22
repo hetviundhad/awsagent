@@ -1,0 +1,235 @@
+{
+  "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+  "optimal_refusal_threshold": 0.66,
+  "optimal_f1_score": 0.9697,
+  "optimal_precision": 0.9412,
+  "optimal_recall": 1.0,
+  "confusion_matrix": {
+    "tp": 16,
+    "fp": 1,
+    "fn": 0,
+    "tn": 14
+  },
+  "evaluation_samples_count": 31,
+  "in_scope_count": 16,
+  "off_scope_count": 15,
+  "evaluated_questions": [
+    {
+      "question": "What is the role of NameNode and DataNode in HDFS architecture?",
+      "label": "in_scope",
+      "source_type": "pdf",
+      "fused_score": 0.9757,
+      "dense_similarity": 0.7421
+    },
+    {
+      "question": "How does MapReduce handle fault tolerance during node failures?",
+      "label": "in_scope",
+      "source_type": "pdf",
+      "fused_score": 0.968,
+      "dense_similarity": 0.5507
+    },
+    {
+      "question": "Explain the 5 V's of Big Data: volume, velocity, variety, veracity, and value.",
+      "label": "in_scope",
+      "source_type": "pdf",
+      "fused_score": 0.9836,
+      "dense_similarity": 0.7509
+    },
+    {
+      "question": "What is the function of Secondary NameNode in Hadoop HDFS?",
+      "label": "in_scope",
+      "source_type": "pdf",
+      "fused_score": 0.9677,
+      "dense_similarity": 0.6494
+    },
+    {
+      "question": "How does block size in HDFS affect storage efficiency and parallel processing?",
+      "label": "in_scope",
+      "source_type": "pdf",
+      "fused_score": 0.968,
+      "dense_similarity": 0.6826
+    },
+    {
+      "question": "What is data locality and why is moving computation cheaper than moving data?",
+      "label": "in_scope",
+      "source_type": "pptx",
+      "fused_score": 0.9316,
+      "dense_similarity": 0.7444
+    },
+    {
+      "question": "How does rack awareness work in data placement strategies across switches?",
+      "label": "in_scope",
+      "source_type": "pptx",
+      "fused_score": 0.9757,
+      "dense_similarity": 0.6772
+    },
+    {
+      "question": "Explain the difference between process-local, node-local, and rack-local data locality.",
+      "label": "in_scope",
+      "source_type": "pptx",
+      "fused_score": 0.9606,
+      "dense_similarity": 0.8152
+    },
+    {
+      "question": "What are the core responsibilities of a cluster resource manager like YARN or Mesos?",
+      "label": "in_scope",
+      "source_type": "pptx",
+      "fused_score": 0.9533,
+      "dense_similarity": 0.6059
+    },
+    {
+      "question": "How do replica placement policies ensure fault tolerance against rack failure?",
+      "label": "in_scope",
+      "source_type": "pptx",
+      "fused_score": 0.9836,
+      "dense_similarity": 0.7067
+    },
+    {
+      "question": "How does data locality relate to parallel task scheduling in distributed data processing?",
+      "label": "in_scope",
+      "source_type": "multi-hop",
+      "fused_score": 0.9677,
+      "dense_similarity": 0.6141
+    },
+    {
+      "question": "What are the trade-offs between shared-memory and distributed-memory architectures?",
+      "label": "in_scope",
+      "source_type": "multi-hop",
+      "fused_score": 0.9116,
+      "dense_similarity": 0.6229
+    },
+    {
+      "question": "Explain how YARN decouples resource management from the MapReduce execution model.",
+      "label": "in_scope",
+      "source_type": "multi-hop",
+      "fused_score": 0.9005,
+      "dense_similarity": 0.6751
+    },
+    {
+      "question": "What mechanisms prevent data loss when a slave node crashes in a Hadoop cluster?",
+      "label": "in_scope",
+      "source_type": "multi-hop",
+      "fused_score": 0.9187,
+      "dense_similarity": 0.481
+    },
+    {
+      "question": "How do data serialization formats impact distributed network transfer efficiency?",
+      "label": "in_scope",
+      "source_type": "multi-hop",
+      "fused_score": 0.9454,
+      "dense_similarity": 0.4742
+    },
+    {
+      "question": "Explain Hadoop EcoSystem and Components as described in UNIT 2_BDA.pdf.",
+      "label": "in_scope",
+      "source_type": "pdf",
+      "fused_score": 0.9836,
+      "dense_similarity": 0.822
+    },
+    {
+      "question": "How do you bake sourdough bread with an active starter at home?",
+      "label": "off_scope",
+      "source_type": "off_scope",
+      "fused_score": 0.6505,
+      "dense_similarity": -0.0023
+    },
+    {
+      "question": "What is the capital city of Mongolia and its current population?",
+      "label": "off_scope",
+      "source_type": "off_scope",
+      "fused_score": 0.3575,
+      "dense_similarity": 0.1064
+    },
+    {
+      "question": "Explain the combustion cycle in a liquid bipropellant rocket engine.",
+      "label": "off_scope",
+      "source_type": "off_scope",
+      "fused_score": 0.2342,
+      "dense_similarity": 0.2342
+    },
+    {
+      "question": "Who won the 1994 FIFA World Cup soccer final in California?",
+      "label": "off_scope",
+      "source_type": "off_scope",
+      "fused_score": 0.143,
+      "dense_similarity": 0.143
+    },
+    {
+      "question": "What is the secret recipe for chocolate molten lava cake?",
+      "label": "off_scope",
+      "source_type": "off_scope",
+      "fused_score": 0.1889,
+      "dense_similarity": 0.1889
+    },
+    {
+      "question": "How do you replace front brake pads on a 2018 Honda Civic?",
+      "label": "off_scope",
+      "source_type": "off_scope",
+      "fused_score": 0.1536,
+      "dense_similarity": 0.1536
+    },
+    {
+      "question": "What is the plot summary of Hamlet by William Shakespeare?",
+      "label": "off_scope",
+      "source_type": "off_scope",
+      "fused_score": 0.1981,
+      "dense_similarity": 0.1981
+    },
+    {
+      "question": "Explain quantum chromodynamics and gluon color charge exchange.",
+      "label": "off_scope",
+      "source_type": "off_scope",
+      "fused_score": 0.1598,
+      "dense_similarity": 0.1598
+    },
+    {
+      "question": "How do gardeners prevent aphids on tomato plants organically?",
+      "label": "off_scope",
+      "source_type": "off_scope",
+      "fused_score": 0.1244,
+      "dense_similarity": 0.1244
+    },
+    {
+      "question": "What are the official rules of professional cricket bowling deliveries?",
+      "label": "off_scope",
+      "source_type": "off_scope",
+      "fused_score": 0.2161,
+      "dense_similarity": 0.2161
+    },
+    {
+      "question": "What causes plate tectonics and continental drift in geology?",
+      "label": "off_scope",
+      "source_type": "off_scope",
+      "fused_score": 0.1915,
+      "dense_similarity": 0.1915
+    },
+    {
+      "question": "How do dentists treat dental caries and root canal infections?",
+      "label": "off_scope",
+      "source_type": "off_scope",
+      "fused_score": 0.1006,
+      "dense_similarity": 0.1006
+    },
+    {
+      "question": "What is the process of cellular mitosis in diploid eukaryotic cells?",
+      "label": "off_scope",
+      "source_type": "off_scope",
+      "fused_score": 0.8213,
+      "dense_similarity": 0.209
+    },
+    {
+      "question": "How does a four-stroke internal combustion engine cycle work?",
+      "label": "off_scope",
+      "source_type": "off_scope",
+      "fused_score": 0.235,
+      "dense_similarity": 0.235
+    },
+    {
+      "question": "What are the historical origins of the French Impressionism art movement?",
+      "label": "off_scope",
+      "source_type": "off_scope",
+      "fused_score": 0.6333,
+      "dense_similarity": -0.0223
+    }
+  ]
+}

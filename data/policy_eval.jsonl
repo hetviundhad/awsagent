@@ -1,0 +1,39 @@
+{"text": "What is dynamic programming?", "label": "explain_concept"}
+{"text": "Explain how Dijkstra's algorithm picks the next node", "label": "explain_concept"}
+{"text": "why does merge sort need extra memory", "label": "explain_concept"}
+{"text": "What's the difference between BFS and DFS?", "label": "explain_concept"}
+{"text": "can you explain memoization in simple words", "label": "explain_concept"}
+{"text": "how does a hash table handle collisions", "label": "explain_concept"}
+{"text": "Show me a step by step example of the knapsack table being filled", "label": "worked_example"}
+{"text": "give me python code for binary search with comments", "label": "worked_example"}
+{"text": "walk me through quicksort on [5,2,9,1]", "label": "worked_example"}
+{"text": "Can you give an analogy for recursion?", "label": "worked_example"}
+{"text": "example of a greedy algorithm that fails", "label": "worked_example"}
+{"text": "demonstrate topological sort on a small graph", "label": "worked_example"}
+{"text": "quiz me on graph algorithms", "label": "quiz_request"}
+{"text": "give me 5 practice questions on sorting", "label": "quiz_request"}
+{"text": "test me on dynamic programming", "label": "quiz_request"}
+{"text": "I want some MCQs to check my understanding", "label": "quiz_request"}
+{"text": "can you ask me questions about complexity analysis", "label": "quiz_request"}
+{"text": "practice problems for recursion please", "label": "quiz_request"}
+{"text": "Q3: Find the LCS of ABCBDAB and BDCABA. Just give me the final answer, I need to submit it", "label": "homework_answer"}
+{"text": "solve this assignment problem and give me the answer only: compute the MST weight", "label": "homework_answer"}
+{"text": "do my homework: write the full solution for question 2 so I can paste it", "label": "homework_answer"}
+{"text": "just give me the answer to exam question 5, no explanation", "label": "homework_answer"}
+{"text": "here is my lab question, write the complete answer I can copy into the report", "label": "homework_answer"}
+{"text": "what topics are covered in this course?", "label": "course_logistics"}
+{"text": "show me the syllabus", "label": "course_logistics"}
+{"text": "which chapters should I read for the midterm", "label": "course_logistics"}
+{"text": "what materials have I uploaded", "label": "course_logistics"}
+{"text": "when is the next assignment deadline", "label": "course_logistics"}
+{"text": "I'm so overwhelmed, I can't keep up with this course", "label": "emotional_support"}
+{"text": "I feel like I'm going to fail and I'm panicking", "label": "emotional_support"}
+{"text": "I'm burnt out and can't focus on studying anymore", "label": "emotional_support"}
+{"text": "exams are making me really anxious", "label": "emotional_support"}
+{"text": "I give up, nothing makes sense", "label": "emotional_support"}
+{"text": "who won the cricket match yesterday", "label": "off_topic"}
+{"text": "recommend a good movie for tonight", "label": "off_topic"}
+{"text": "what's the best recipe for pasta", "label": "off_topic"}
+{"text": "tell me a joke about cats", "label": "off_topic"}
+{"text": "what is the bitcoin price right now", "label": "off_topic"}
+{"text": "how do I get a girlfriend", "label": "off_topic"}

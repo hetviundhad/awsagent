@@ -1,0 +1,28 @@
+{
+  "id": "session_4_frustrated",
+  "name": "Frustrated Student (Red-Black Trees)",
+  "archetype": "frustrated",
+  "problem": "Explain case 3 rotation of Red-Black Tree node insertion when uncle is black.",
+  "course": "Algorithms & Data Structures",
+  "expected_outcome": "High frustration detected -> triggers Breather first, withholding academic content until emotional reset.",
+  "snapshots": [
+    {
+      "step": 1,
+      "t_offset_sec": 0.0,
+      "text": "Case 3: uncle is black and node is outer grandchild\nRotate parent around grandparent\n",
+      "pause_sec": 1.5
+    },
+    {
+      "step": 2,
+      "t_offset_sec": 3.0,
+      "text": "Wait no, colors need to flip or rotate first? I hate this tree stuff, none of this makes sense.\n",
+      "pause_sec": 3.0
+    },
+    {
+      "step": 3,
+      "t_offset_sec": 7.0,
+      "text": "I give up. This is impossible and I can't do this anymore. Why do we even need red black trees.\n",
+      "pause_sec": 5.0
+    }
+  ]
+}

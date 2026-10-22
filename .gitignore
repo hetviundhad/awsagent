@@ -1,0 +1,17 @@
+# secrets - the original zip shipped a real .env; rotate those keys!
+.env
+frontend/.env
+*.pem
+# python / node
+__pycache__/
+*.pyc
+.venv*/
+venv/
+node_modules/
+frontend/dist/
+# runtime data (large media + local DB + decider logs)
+backend/data/storage/
+data/storage/
+*.bak_*
+*.zip
+

@@ -1,0 +1,43 @@
+{
+  "course": {
+    "name": "Distributed Computing & Big Data Architecture (Sample data)",
+    "description": "Comprehensive sample dataset covering distributed computing foundations, data locality, and cluster resource scheduling. [Sample data]",
+    "subject": "Distributed Systems",
+    "semester": "Fall 2026"
+  },
+  "course_units": [
+    {
+      "title": "Unit 1: Distributed Foundations (Sample data)",
+      "order": 1,
+      "description": "Core principles of distributed data processing"
+    }
+  ],
+  "topics": [
+    {
+      "name": "Data Locality & Placement (Sample data)",
+      "order": 1,
+      "description": "Mechanisms for scheduling compute near target data partitions."
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Data Locality Principle",
+      "description": "Executing compute tasks directly on storage nodes containing target data to minimize network bandwidth consumption."
+    }
+  ],
+  "questions": [
+    {
+      "type": "mcq",
+      "stem": "What is the primary motivation for enforcing data locality in distributed clusters?",
+      "options": [
+        "Minimizing cross-rack network transfer latency and bandwidth saturation",
+        "Increasing rotational disk spindle speeds",
+        "Bypassing kernel privilege separation",
+        "Eliminating non-volatile memory requirements"
+      ],
+      "answer": "Minimizing cross-rack network transfer latency and bandwidth saturation",
+      "explanation": "Moving compute tasks to the node holding data blocks reduces switch congestion and latency.",
+      "difficulty": "Easy"
+    }
+  ]
+}

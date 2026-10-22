@@ -1,0 +1,34 @@
+{
+  "id": "session_3_stuck_blank",
+  "name": "Stuck Blank (Longest Palindromic Substring)",
+  "archetype": "stuck_blank",
+  "problem": "Find the longest palindromic substring in string s. State time complexity target O(n^2).",
+  "course": "Algorithms & Data Structures",
+  "expected_outcome": "Student types an incomplete sentence and goes idle for >10s. Escalates 0 -> 1 -> 2 -> 3 to offer scaffolding.",
+  "snapshots": [
+    {
+      "step": 1,
+      "t_offset_sec": 0.0,
+      "text": "def longestPalindrome(s):\n",
+      "pause_sec": 2.0
+    },
+    {
+      "step": 2,
+      "t_offset_sec": 4.0,
+      "text": "def longestPalindrome(s):\n    # I don't know how to start\n",
+      "pause_sec": 5.0
+    },
+    {
+      "step": 3,
+      "t_offset_sec": 10.0,
+      "text": "def longestPalindrome(s):\n    # I don't know how to start\n    # brute force is O(n^3) checking all substrings...\n",
+      "pause_sec": 8.0
+    },
+    {
+      "step": 4,
+      "t_offset_sec": 19.0,
+      "text": "def longestPalindrome(s):\n    # I don't know how to start\n    # brute force is O(n^3) checking all substrings...\n    # stuck here\n",
+      "pause_sec": 12.0
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "prerequisite-gap",
+  "hackathon_tag": "#context-memory",
+  "model": "StrandsAgents/strands-decider-2B-hobson-v19",
+  "how_to_use": "Returns None when the learner model has no weak concepts, so the question is simply not asked.",
+  "question": {
+    "type": "noul",
+    "instructions": "Does the student's NEW message depend on a concept listed under 'weak concepts' in the student profile?",
+    "criteria": {
+      "true": "the question builds on, or directly involves, one of the weak concepts",
+      "false": "the question is about something else"
+    }
+  },
+  "state_shape": "see P.build_state(...) - only the user's/student's own words",
+  "threshold": {
+    "key": "prereq",
+    "default": 0.65,
+    "adapts_from_feedback": true,
+    "triggers_when": "high"
+  },
+  "wiring": "from backend.app.decider import patterns as P\nfrom backend.app.decider.client import get_client\nfrom backend.app.decider.calibration import get_thresholds\n\nthr = get_thresholds()\ndecisions, ask = P.run_patterns(get_client(), state, [P.prereq_gap(weak_concepts)], thr.get)   # ONE round trip for all patterns\nd = decisions[\"prereq\"]\nif d.triggered:          # plain Python owns the control flow\n    ...                  # prepend a prerequisite nudge to the prompt\n",
+  "note": "Returns None when the learner model has no weak concepts, so the question is simply not asked."
+}

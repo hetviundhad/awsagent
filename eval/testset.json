@@ -1,0 +1,1137 @@
+[
+  {
+    "id": "eval_fact_01",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What are the primary responsibilities of the NameNode in HDFS?",
+    "question_type": "factual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The NameNode maintains the filesystem namespace, directory tree, and tracks the mapping of data blocks to DataNodes.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 12
+      }
+    ]
+  },
+  {
+    "id": "eval_fact_02",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is the default block size in modern Apache Hadoop HDFS?",
+    "question_type": "factual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The default block size in modern Hadoop distributions is 128 MB (or 64 MB in older versions).",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 9
+      }
+    ]
+  },
+  {
+    "id": "eval_fact_03",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What role does the Secondary NameNode perform in Hadoop HDFS?",
+    "question_type": "factual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The Secondary NameNode merges the fsimage and edits log periodically to prevent the edit log from growing excessively large.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 16
+      }
+    ]
+  },
+  {
+    "id": "eval_fact_04",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What are the 5 V's of Big Data defined in the introductory material?",
+    "question_type": "factual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The 5 V's are Volume, Velocity, Variety, Veracity, and Value.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Unit 1 intro to bigdata (1).pdf",
+        "page_number": 7
+      }
+    ]
+  },
+  {
+    "id": "eval_fact_05",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does HDFS achieve fault tolerance against hardware failures?",
+    "question_type": "factual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "HDFS achieves fault tolerance by replicating each data block across multiple DataNodes (default replication factor of 3).",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 10
+      }
+    ]
+  },
+  {
+    "id": "eval_fact_06",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is the function of the JobTracker in the legacy MapReduce framework?",
+    "question_type": "factual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The JobTracker coordinates job execution, assigns tasks to TaskTrackers, and handles task failures.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 5
+      }
+    ]
+  },
+  {
+    "id": "eval_fact_07",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is the function of a TaskTracker on worker nodes?",
+    "question_type": "factual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "TaskTrackers execute individual map and reduce tasks assigned by the JobTracker and report progress via heartbeats.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 6
+      }
+    ]
+  },
+  {
+    "id": "eval_fact_08",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What does HDFS rack awareness achieve in distributed clusters?",
+    "question_type": "factual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Rack awareness prevents data loss if an entire rack switch fails by placing replicas across distinct racks.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "2.2 Data_Placement_Strategies.pptx",
+        "page_number": 3
+      }
+    ]
+  },
+  {
+    "id": "eval_fact_09",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is the definition of structured data in big data systems?",
+    "question_type": "factual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Structured data conforms to a rigid tabular schema with defined rows, columns, and data types (e.g., relational databases).",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Unit 1_material_BDA (1).pdf",
+        "page_number": 14
+      }
+    ]
+  },
+  {
+    "id": "eval_fact_10",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is unstructured data according to the course notes?",
+    "question_type": "factual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Unstructured data has no predefined data model, such as video files, raw text documents, audio, and sensor streams.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Unit 1_material_BDA (1).pdf",
+        "page_number": 16
+      }
+    ]
+  },
+  {
+    "id": "eval_fact_11",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What does the YARN ResourceManager manage in a cluster?",
+    "question_type": "factual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The ResourceManager allocates global compute resources (CPU and memory) across competing applications in the cluster.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Cluster_Resource_Management.pptx",
+        "page_number": 4
+      }
+    ]
+  },
+  {
+    "id": "eval_fact_12",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is the NodeManager's responsibility under YARN?",
+    "question_type": "factual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The NodeManager monitors resource usage of application containers running on an individual worker node.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Cluster_Resource_Management.pptx",
+        "page_number": 6
+      }
+    ]
+  },
+  {
+    "id": "eval_fact_13",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What does the ApplicationMaster do in YARN?",
+    "question_type": "factual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The ApplicationMaster negotiates resources with the ResourceManager and works with NodeManagers to execute application tasks.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Cluster_Resource_Management.pptx",
+        "page_number": 7
+      }
+    ]
+  },
+  {
+    "id": "eval_fact_14",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is semi-structured data in big data categorization?",
+    "question_type": "factual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Semi-structured data does not follow strict relational schemas but contains self-describing markers or tags like JSON and XML.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Unit 1_material_BDA (1).pdf",
+        "page_number": 18
+      }
+    ]
+  },
+  {
+    "id": "eval_fact_15",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is the standard replication factor for HDFS blocks?",
+    "question_type": "factual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The standard default replication factor for HDFS data blocks is 3.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 10
+      }
+    ]
+  },
+  {
+    "id": "eval_conc_01",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "Why is moving computation cheaper than moving data in distributed processing?",
+    "question_type": "conceptual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Moving small computation code over the network to the node where large data resides minimizes network saturation and latency.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "2.3 Data_Locality.pptx",
+        "page_number": 2
+      }
+    ]
+  },
+  {
+    "id": "eval_conc_02",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "Explain the trade-offs between shared-memory and distributed-memory architectures.",
+    "question_type": "conceptual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Shared memory provides low-latency communication via memory addresses but suffers from bus contention; distributed memory scales to thousands of nodes but requires message passing.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Parallelism_and_Distributed_Data_Processing_Notes.docx",
+        "page_number": 8
+      }
+    ]
+  },
+  {
+    "id": "eval_conc_03",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does Amdahl's Law explain the limits of parallel speedup?",
+    "question_type": "conceptual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Amdahl's Law states that maximum speedup is strictly constrained by the sequential, non-parallelizable fraction of the algorithm.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Parallelism_and_Distributed_Data_Processing_Notes.docx",
+        "page_number": 14
+      }
+    ]
+  },
+  {
+    "id": "eval_conc_04",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is the fundamental difference between scaling up (vertical) and scaling out (horizontal)?",
+    "question_type": "conceptual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Scaling up adds more RAM/CPUs to a single machine (expensive hardware limit), while scaling out adds commodity nodes to a distributed cluster.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Unit 1 intro to bigdata (1).pdf",
+        "page_number": 12
+      }
+    ]
+  },
+  {
+    "id": "eval_conc_05",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is Dominant Resource Fairness (DRF) in multi-resource cluster scheduling?",
+    "question_type": "conceptual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "DRF allocates resources across competing users based on each user's dominant share among multiple resource types like CPU and memory.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Cluster_Resource_Management.pptx",
+        "page_number": 12
+      }
+    ]
+  },
+  {
+    "id": "eval_conc_06",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does data locality preservation differ across PROCESS_LOCAL, NODE_LOCAL, and RACK_LOCAL?",
+    "question_type": "conceptual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "PROCESS_LOCAL runs in the same JVM memory; NODE_LOCAL reads from local disk; RACK_LOCAL transfers data across the intra-rack switch.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "2.3 Data_Locality.pptx",
+        "page_number": 5
+      }
+    ]
+  },
+  {
+    "id": "eval_conc_07",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "Why does the shared-nothing architecture enable horizontal scalability in big data?",
+    "question_type": "conceptual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Because nodes do not share memory or disk storage, eliminating hardware lock contention and allowing independent linear scaling.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Unit 1_material_BDA (1).pdf",
+        "page_number": 8
+      }
+    ]
+  },
+  {
+    "id": "eval_conc_08",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does Gustafson's Law contrast with Amdahl's Law regarding scaled speedup?",
+    "question_type": "conceptual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Gustafson's Law assumes problem size increases with computing capacity, demonstrating that large datasets can achieve near-linear scaled speedup.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Parallelism_and_Distributed_Data_Processing_Notes.docx",
+        "page_number": 18
+      }
+    ]
+  },
+  {
+    "id": "eval_conc_09",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is the concept of data velocity in big data processing pipelines?",
+    "question_type": "conceptual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Velocity refers to the speed at which incoming data is generated and must be processed in real-time or streaming fashion.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Unit 1 intro to bigdata (1).pdf",
+        "page_number": 9
+      }
+    ]
+  },
+  {
+    "id": "eval_conc_10",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "Why does HDFS write-once-read-many (WORM) design simplify data consistency?",
+    "question_type": "conceptual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "WORM guarantees that appended data cannot be randomly updated, eliminating complex distributed locking and cache coherency overhead.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 8
+      }
+    ]
+  },
+  {
+    "id": "eval_conc_11",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is the difference between FIFO, Fair Scheduler, and Capacity Scheduler in YARN?",
+    "question_type": "conceptual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "FIFO runs jobs sequentially; Fair Scheduler allocates equal shares dynamically; Capacity Scheduler provides guaranteed resource quotas per organization.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Cluster_Resource_Management.pptx",
+        "page_number": 16
+      }
+    ]
+  },
+  {
+    "id": "eval_conc_12",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is pipeline parallelism and how does it overlap computation across stages?",
+    "question_type": "conceptual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Pipeline parallelism partitions work into sequential pipeline stages where subsequent data elements are processed concurrently across stages.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Parallelism_and_Distributed_Data_Processing_Notes.docx",
+        "page_number": 22
+      }
+    ]
+  },
+  {
+    "id": "eval_conc_13",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is data veracity in big data quality assessment?",
+    "question_type": "conceptual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Veracity refers to the trustworthiness, noise level, and authenticity of ingested data sources.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Unit 1 intro to bigdata (1).pdf",
+        "page_number": 10
+      }
+    ]
+  },
+  {
+    "id": "eval_conc_14",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does task speculative execution address stragglers in distributed frameworks?",
+    "question_type": "conceptual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "When a task runs unusually slowly, the scheduler launches a speculative duplicate task on another node and accepts whichever finishes first.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 21
+      }
+    ]
+  },
+  {
+    "id": "eval_conc_15",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "Why is Apache Mesos considered a two-level resource scheduling architecture?",
+    "question_type": "conceptual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Mesos offers coarse-grained resource blocks to framework schedulers (level 1), which then decide how to allocate tasks to those resources (level 2).",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Cluster_Resource_Management.pptx",
+        "page_number": 9
+      }
+    ]
+  },
+  {
+    "id": "eval_proc_01",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What are the exact steps of the HDFS block placement policy for replication factor 3?",
+    "question_type": "procedural",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Step 1: Put first replica on local node. Step 2: Put second replica on a remote rack. Step 3: Put third replica on a different node in the same remote rack.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "2.2 Data_Placement_Strategies.pptx",
+        "page_number": 4
+      }
+    ]
+  },
+  {
+    "id": "eval_proc_02",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does a client read a file from HDFS step-by-step?",
+    "question_type": "procedural",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Client asks NameNode for block locations, receives sorted list of closest DataNodes, opens DirectInputStream, and reads blocks sequentially from DataNodes.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 13
+      }
+    ]
+  },
+  {
+    "id": "eval_proc_03",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "Describe the execution flow of a MapReduce job from InputFormat to OutputFormat.",
+    "question_type": "procedural",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "InputSplit -> RecordReader -> Map -> Partitioner -> Spill & Sort -> Shuffle & Merge -> Reduce -> RecordWriter -> OutputFormat.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 18
+      }
+    ]
+  },
+  {
+    "id": "eval_proc_04",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How do you calculate speedup S under Amdahl's Law given sequential fraction f and p processors?",
+    "question_type": "procedural",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "S(p) = 1 / (f + (1 - f) / p).",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Parallelism_and_Distributed_Data_Processing_Notes.docx",
+        "page_number": 15
+      }
+    ]
+  },
+  {
+    "id": "eval_proc_05",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What sequence of actions occurs when an HDFS DataNode fails to send heartbeats?",
+    "question_type": "procedural",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "NameNode marks DataNode dead after timeout (10 min), identifies under-replicated blocks, and schedules background block replication onto healthy DataNodes.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 11
+      }
+    ]
+  },
+  {
+    "id": "eval_proc_06",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does the YARN Capacity Scheduler allocate a container to an application?",
+    "question_type": "procedural",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "NodeManager sends heartbeat with free resources -> Scheduler matches highest priority queue with headroom -> creates container lease token -> launches container.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Cluster_Resource_Management.pptx",
+        "page_number": 18
+      }
+    ]
+  },
+  {
+    "id": "eval_proc_07",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does the shuffle phase organize intermediate map outputs before reduce tasks execute?",
+    "question_type": "procedural",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Intermediate (K2, V2) pairs are partitioned by key hash, sorted in memory buffers, spilled to local disk, and transferred over HTTP to reducing nodes.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 19
+      }
+    ]
+  },
+  {
+    "id": "eval_proc_08",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What steps does the Secondary NameNode take to checkpoint the HDFS metadata?",
+    "question_type": "procedural",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Downloads fsimage and edits from NameNode, loads fsimage to memory, applies edits, writes new fsimage, and uploads it back to primary NameNode.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 16
+      }
+    ]
+  },
+  {
+    "id": "eval_proc_09",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How is task locality delay scheduling implemented when a node-local slot is occupied?",
+    "question_type": "procedural",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The scheduler waits a small configured delay (e.g., 3s) for a node-local slot to free up before falling back to rack-local or off-switch.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "2.3 Data_Locality.pptx",
+        "page_number": 8
+      }
+    ]
+  },
+  {
+    "id": "eval_proc_10",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How do you compute dominant share in Dominant Resource Fairness?",
+    "question_type": "procedural",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Calculate share of CPU allocated (c/C) and share of RAM allocated (m/M); the maximum between the two is the user's dominant share.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Cluster_Resource_Management.pptx",
+        "page_number": 13
+      }
+    ]
+  },
+  {
+    "id": "eval_proc_11",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does an HDFS client write a new block into the cluster via pipeline replication?",
+    "question_type": "procedural",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Client streams 64KB packets to DataNode 1, which writes to disk and immediately flushes packets down the pipeline to DataNode 2, and DataNode 2 to DataNode 3.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 14
+      }
+    ]
+  },
+  {
+    "id": "eval_proc_12",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does data partitioning prevent key skew during a distributed reduce operation?",
+    "question_type": "procedural",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Custom partitioners use salting or range partitioning to evenly distribute high-frequency keys across multiple reducers.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Parallelism_and_Distributed_Data_Processing_Notes.docx",
+        "page_number": 26
+      }
+    ]
+  },
+  {
+    "id": "eval_proc_13",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What procedure does Hadoop use to verify block integrity on DataNodes?",
+    "question_type": "procedural",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "DataNodes run a background DataBlockScanner verifying CRC32 checksums against checksum metadata files stored alongside block data.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 10
+      }
+    ]
+  },
+  {
+    "id": "eval_proc_14",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does MapReduce combiner optimization reduce network I/O?",
+    "question_type": "procedural",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "A combiner runs locally on each map node immediately after mapping to perform local pre-aggregation before transferring data across the network.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 20
+      }
+    ]
+  },
+  {
+    "id": "eval_proc_15",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What steps does an application take to submit a job to YARN?",
+    "question_type": "procedural",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Client submits ApplicationSubmissionContext to ResourceManager -> RM allocates container for ApplicationMaster -> NodeManager launches AM -> AM requests task containers.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Cluster_Resource_Management.pptx",
+        "page_number": 5
+      }
+    ]
+  },
+  {
+    "id": "eval_multi_01",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does data locality preservation in distributed scheduling directly influence network switch saturation?",
+    "question_type": "multi_hop",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "When scheduler achieves NODE_LOCAL execution, zero data traverses top-of-rack or core aggregation switches; RACK_LOCAL traverses intra-rack links only, preventing inter-switch core network saturation.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "2.3 Data_Locality.pptx",
+        "page_number": 4
+      }
+    ]
+  },
+  {
+    "id": "eval_multi_02",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does the HDFS replica placement policy balance fault tolerance against network write latency during data ingestion?",
+    "question_type": "multi_hop",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Placing two replicas on the same remote rack limits cross-switch network traffic to a single rack hop while still guaranteeing complete survivability if an entire rack fails.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "2.2 Data_Placement_Strategies.pptx",
+        "page_number": 5
+      }
+    ]
+  },
+  {
+    "id": "eval_multi_03",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does YARN decoupling of resource management from MapReduce allow diverse frameworks like Spark and Flink to run concurrently?",
+    "question_type": "multi_hop",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "By abstracting compute nodes into generic CPU and memory containers under ResourceManager, applications bring their own ApplicationMaster rather than being forced into MapReduce execution constraints.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Cluster_Resource_Management.pptx",
+        "page_number": 8
+      }
+    ]
+  },
+  {
+    "id": "eval_multi_04",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "In what way does the combination of Amdahl's Law and network latency explain why scaling to thousands of nodes yields diminishing returns?",
+    "question_type": "multi_hop",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "As node count increases, synchronization and network message latency grow, increasing the sequential communication fraction which caps total speedup under Amdahl's Law.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Parallelism_and_Distributed_Data_Processing_Notes.docx",
+        "page_number": 17
+      }
+    ]
+  },
+  {
+    "id": "eval_multi_05",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How do the 5 V's of big data necessitate the transition from shared-memory RDBMS to shared-nothing distributed storage like HDFS?",
+    "question_type": "multi_hop",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Extreme volume and velocity exceed the I/O bus and storage bandwidth of single-node servers, requiring horizontally partitioned storage without shared physical bottlenecks.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Unit 1 intro to bigdata (1).pdf",
+        "page_number": 14
+      }
+    ]
+  },
+  {
+    "id": "eval_multi_06",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "Why does speculative execution in MapReduce require idempotent task operations on distributed blocks?",
+    "question_type": "multi_hop",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Because duplicate tasks run simultaneously on identical input blocks, tasks must produce identical side-effect-free results so discarding the slower execution causes no inconsistency.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 21
+      }
+    ]
+  },
+  {
+    "id": "eval_multi_07",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does Dominant Resource Fairness prevent CPU-heavy tasks from starving memory-heavy tasks in a heterogeneous cluster?",
+    "question_type": "multi_hop",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "DRF normalizes consumption across all dimensions by equalizing each user's dominant share, ensuring that high CPU usage is penalized relative to cluster total capacity.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Cluster_Resource_Management.pptx",
+        "page_number": 14
+      }
+    ]
+  },
+  {
+    "id": "eval_multi_08",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How do HDFS block sizes directly determine the number of Map tasks instantiated in a MapReduce job?",
+    "question_type": "multi_hop",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Each HDFS block corresponds by default to one InputSplit, meaning a larger block size creates fewer mapper tasks, reducing task scheduling overhead on the cluster.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 9
+      }
+    ]
+  },
+  {
+    "id": "eval_multi_09",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "Why does top-down memoization fail to prevent memory exhaustion when applied to distributed Big Data computations without partitioning?",
+    "question_type": "multi_hop",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Single-process memoization stores state in local RAM; without distributed partitioning and shuffling, state overflows single-node memory bounds.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Parallelism_and_Distributed_Data_Processing_Notes.docx",
+        "page_number": 29
+      }
+    ]
+  },
+  {
+    "id": "eval_multi_10",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does rack awareness interact with task scheduling delay to achieve maximum data locality?",
+    "question_type": "multi_hop",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Delay scheduling holds task dispatch briefly waiting for a node on the same rack before falling back to cross-rack communication, maximizing bandwidth utilization.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "2.3 Data_Locality.pptx",
+        "page_number": 7
+      }
+    ]
+  },
+  {
+    "id": "eval_vis_01",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does the HDFS master-worker architecture diagram illustrate communication between the client, NameNode, and DataNodes?",
+    "question_type": "visual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The diagram shows the client communicating with NameNode for metadata over RPC, and reading/writing block data directly to DataNodes via TCP streaming.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 7
+      }
+    ]
+  },
+  {
+    "id": "eval_vis_02",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "In the rack awareness topology diagram, what network structure connects nodes across different racks?",
+    "question_type": "visual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Nodes in a rack connect to a Top-of-Rack (TOR) switch, and TOR switches connect across a core aggregation switch router.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "2.2 Data_Placement_Strategies.pptx",
+        "page_number": 2
+      }
+    ]
+  },
+  {
+    "id": "eval_vis_03",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does the MapReduce dataflow schematic represent the transition from Map outputs to Reduce inputs?",
+    "question_type": "visual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The schematic illustrates Map tasks emitting intermediate key-values, followed by a partitioned shuffle/sort cross-over network to Reducers.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 17
+      }
+    ]
+  },
+  {
+    "id": "eval_vis_04",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "Interpret the data locality hierarchy diagram showing PROCESS_LOCAL, NODE_LOCAL, and RACK_LOCAL access paths.",
+    "question_type": "visual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The diagram shows memory access within the CPU/JVM cache, local disk access over SATA/PCIe bus, and rack-level access across the local TOR network switch.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "2.3 Data_Locality.pptx",
+        "page_number": 3
+      }
+    ]
+  },
+  {
+    "id": "eval_vis_05",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does the YARN architectural overview diagram illustrate the interaction between ResourceManager, NodeManagers, and ApplicationMaster?",
+    "question_type": "visual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The diagram shows the central ResourceManager leasing containers to NodeManagers while the ApplicationMaster manages task lifecycles inside worker containers.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Cluster_Resource_Management.pptx",
+        "page_number": 4
+      }
+    ]
+  },
+  {
+    "id": "eval_vis_06",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What does the Amdahl's Law speedup curves graph demonstrate as the number of parallel processors approaches infinity?",
+    "question_type": "visual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The curves level off asymptotically at 1/f, showing that speedup is bounded by the sequential fraction regardless of processor count.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Parallelism_and_Distributed_Data_Processing_Notes.docx",
+        "page_number": 16
+      }
+    ]
+  },
+  {
+    "id": "eval_vis_07",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "In the HDFS pipeline write schematic, how are data packets forwarded sequentially between DataNodes?",
+    "question_type": "visual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The client streams packets to DataNode A, which forwards them in a daisy-chain pipeline to DataNode B, which forwards to DataNode C.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "UNIT 2_BDA.pdf",
+        "page_number": 14
+      }
+    ]
+  },
+  {
+    "id": "eval_vis_08",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does the Big Data 5 V's conceptual graphic categorize velocity and variety?",
+    "question_type": "visual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "It displays velocity as streaming speed and variety as structured, semi-structured, and unstructured data modalities.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Unit 1 intro to bigdata (1).pdf",
+        "page_number": 6
+      }
+    ]
+  },
+  {
+    "id": "eval_vis_09",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "Explain the two-level scheduling diagram of Apache Mesos allocating resources to diverse frameworks.",
+    "question_type": "visual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "The diagram shows Mesos master offering raw resource vectors to framework schedulers, which assign tasks to individual Mesos slaves.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Cluster_Resource_Management.pptx",
+        "page_number": 10
+      }
+    ]
+  },
+  {
+    "id": "eval_vis_10",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "In the distributed memory cluster topology diagram, how do compute nodes exchange state without shared physical RAM?",
+    "question_type": "visual",
+    "is_unsupported": false,
+    "must_refuse": false,
+    "ground_truth_answer": "Nodes communicate exclusively through high-speed network interconnects via explicit message-passing interfaces.",
+    "ground_truth_source_locations": [
+      {
+        "document_name": "Parallelism_and_Distributed_Data_Processing_Notes.docx",
+        "page_number": 10
+      }
+    ]
+  },
+  {
+    "id": "eval_off_01",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How do you bake sourdough bread with an active starter at home?",
+    "question_type": "off_material",
+    "is_unsupported": true,
+    "must_refuse": true,
+    "ground_truth_answer": "I cannot answer this question because it is not covered in your course material.",
+    "ground_truth_source_locations": []
+  },
+  {
+    "id": "eval_off_02",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is the capital city of Mongolia and what is its current population?",
+    "question_type": "off_material",
+    "is_unsupported": true,
+    "must_refuse": true,
+    "ground_truth_answer": "I cannot answer this question because it is not covered in your course material.",
+    "ground_truth_source_locations": []
+  },
+  {
+    "id": "eval_off_03",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "Explain the combustion cycle in a liquid bipropellant rocket engine.",
+    "question_type": "off_material",
+    "is_unsupported": true,
+    "must_refuse": true,
+    "ground_truth_answer": "I cannot answer this question because it is not covered in your course material.",
+    "ground_truth_source_locations": []
+  },
+  {
+    "id": "eval_off_04",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "Who won the 1994 FIFA World Cup soccer tournament held in the United States?",
+    "question_type": "off_material",
+    "is_unsupported": true,
+    "must_refuse": true,
+    "ground_truth_answer": "I cannot answer this question because it is not covered in your course material.",
+    "ground_truth_source_locations": []
+  },
+  {
+    "id": "eval_off_05",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is the traditional recipe for French chocolate molten lava cake?",
+    "question_type": "off_material",
+    "is_unsupported": true,
+    "must_refuse": true,
+    "ground_truth_answer": "I cannot answer this question because it is not covered in your course material.",
+    "ground_truth_source_locations": []
+  },
+  {
+    "id": "eval_off_06",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How do you replace front brake pads and rotors on a 2018 Honda Civic?",
+    "question_type": "off_material",
+    "is_unsupported": true,
+    "must_refuse": true,
+    "ground_truth_answer": "I cannot answer this question because it is not covered in your course material.",
+    "ground_truth_source_locations": []
+  },
+  {
+    "id": "eval_off_07",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is the central dramatic conflict in William Shakespeare's Hamlet?",
+    "question_type": "off_material",
+    "is_unsupported": true,
+    "must_refuse": true,
+    "ground_truth_answer": "I cannot answer this question because it is not covered in your course material.",
+    "ground_truth_source_locations": []
+  },
+  {
+    "id": "eval_off_08",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "Explain quantum chromodynamics and how quarks interact via gluon color charge.",
+    "question_type": "off_material",
+    "is_unsupported": true,
+    "must_refuse": true,
+    "ground_truth_answer": "I cannot answer this question because it is not covered in your course material.",
+    "ground_truth_source_locations": []
+  },
+  {
+    "id": "eval_off_09",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How do organic gardeners prevent aphid infestations on tomato plants?",
+    "question_type": "off_material",
+    "is_unsupported": true,
+    "must_refuse": true,
+    "ground_truth_answer": "I cannot answer this question because it is not covered in your course material.",
+    "ground_truth_source_locations": []
+  },
+  {
+    "id": "eval_off_10",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What are the official rules of professional cricket bowling deliveries?",
+    "question_type": "off_material",
+    "is_unsupported": true,
+    "must_refuse": true,
+    "ground_truth_answer": "I cannot answer this question because it is not covered in your course material.",
+    "ground_truth_source_locations": []
+  },
+  {
+    "id": "eval_off_11",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What causes continental drift and plate tectonics in planetary geology?",
+    "question_type": "off_material",
+    "is_unsupported": true,
+    "must_refuse": true,
+    "ground_truth_answer": "I cannot answer this question because it is not covered in your course material.",
+    "ground_truth_source_locations": []
+  },
+  {
+    "id": "eval_off_12",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How do dentists treat dental caries and severe root canal infections?",
+    "question_type": "off_material",
+    "is_unsupported": true,
+    "must_refuse": true,
+    "ground_truth_answer": "I cannot answer this question because it is not covered in your course material.",
+    "ground_truth_source_locations": []
+  },
+  {
+    "id": "eval_off_13",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What is the sequential biological process of mitosis in eukaryotic cells?",
+    "question_type": "off_material",
+    "is_unsupported": true,
+    "must_refuse": true,
+    "ground_truth_answer": "I cannot answer this question because it is not covered in your course material.",
+    "ground_truth_source_locations": []
+  },
+  {
+    "id": "eval_off_14",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How does a four-stroke internal combustion engine work during the intake stroke?",
+    "question_type": "off_material",
+    "is_unsupported": true,
+    "must_refuse": true,
+    "ground_truth_answer": "I cannot answer this question because it is not covered in your course material.",
+    "ground_truth_source_locations": []
+  },
+  {
+    "id": "eval_off_15",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "What were the origins and key artists of the French Impressionist painting movement?",
+    "question_type": "off_material",
+    "is_unsupported": true,
+    "must_refuse": true,
+    "ground_truth_answer": "I cannot answer this question because it is not covered in your course material.",
+    "ground_truth_source_locations": []
+  },
+  {
+    "id": "eval_off_16",
+    "course_id": "a091a4aa-a333-4a0c-85ec-9af9ad8505bd",
+    "question": "How do you calibrate espresso grind size on an Italian commercial espresso machine?",
+    "question_type": "off_material",
+    "is_unsupported": true,
+    "must_refuse": true,
+    "ground_truth_answer": "I cannot answer this question because it is not covered in your course material.",
+    "ground_truth_source_locations": []
+  }
+]

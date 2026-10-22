@@ -1,0 +1,5 @@
+# Run the Decider 2B model server in its OWN virtualenv (it pulls torch/transformers; Python 3.11-3.12 recommended)
+#   python3.12 -m venv .venv-decider && source .venv-decider/bin/activate
+#   pip install -r requirements-decider.txt
+#   strands-decider serve StrandsAgents/strands-decider-2B-hobson-v19 --port 8099
+strands-decider

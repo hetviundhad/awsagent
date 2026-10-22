@@ -1,0 +1,23 @@
+{
+  "name": "proactivity_gate",
+  "hackathon_tag": "#policy",
+  "model": "StrandsAgents/strands-decider-2B-hobson-v19",
+  "how_to_use": "How to use this recipe: Wrap your agent loop with ProactivityGate. Continuous ~1s background ticks watch user working. If user is in productive struggle, shield them in silence (0 tokens). Only escalate when stuck across multiple ticks.",
+  "question": {
+    "type": "noul",
+    "instructions": "Is the user making a real, reasoned attempt, even if not yet correct?",
+    "criteria": {
+      "true": "the user is actively reasoning, drafting logic, or trying concrete steps",
+      "false": "the user is random guessing, completely blank, or stuck with no idea"
+    }
+  },
+  "state_shape": "see P.build_state(...) - only the user's/student's own words",
+  "threshold": {
+    "key": "silence_shield",
+    "default": 0.6,
+    "adapts_from_feedback": true,
+    "triggers_when": "high"
+  },
+  "wiring": "from backend.app.decider import patterns as P\nfrom backend.app.decider.client import get_client\nfrom backend.app.decider.calibration import get_thresholds\n\nthr = get_thresholds()\ndecisions, ask = P.run_patterns(get_client(), state, [P.ProactivityGate(client, shield=0.60, hysteresis_ticks=3, max_budget=4)], thr.get)   # ONE round trip for all patterns\nd = decisions[\"productive_struggle\"]\nif d.triggered:          # plain Python owns the control flow\n    ...                  # res = gate.evaluate(user_text); if not res.spoken: stay_silent()\n",
+  "note": "How to use this recipe: Wrap your agent loop with ProactivityGate. Continuous ~1s background ticks watch user working. If user is in productive struggle, shield them in silence (0 tokens). Only escalate when stuck across multiple ticks."
+}

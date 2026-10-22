@@ -1,0 +1,23 @@
+{
+  "name": "context-relevance",
+  "hackathon_tag": "#context-memory",
+  "model": "StrandsAgents/strands-decider-2B-hobson-v19",
+  "how_to_use": "One request per chunk, time-boxed. State = question + '--- EXCERPT ---' + chunk.",
+  "question": {
+    "type": "noul",
+    "instructions": "Does the excerpt directly help answer the student's question?",
+    "criteria": {
+      "true": "the excerpt contains information needed to answer the question",
+      "false": "the excerpt is about something else or only loosely related"
+    }
+  },
+  "state_shape": "see P.build_state(...) - only the user's/student's own words",
+  "threshold": {
+    "key": "relevance",
+    "default": 0.4,
+    "adapts_from_feedback": true,
+    "triggers_when": "high"
+  },
+  "wiring": "from backend.app.decider import patterns as P\nfrom backend.app.decider.client import get_client\nfrom backend.app.decider.calibration import get_thresholds\n\nthr = get_thresholds()\ndecisions, ask = P.run_patterns(get_client(), state, [P.context_relevance()], thr.get)   # ONE round trip for all patterns\nd = decisions[\"relevance\"]\nif d.triggered:          # plain Python owns the control flow\n    ...                  # keep the chunk when triggered; drop it otherwise (never drop all chunks)\n",
+  "note": "One request per chunk, time-boxed. State = question + '--- EXCERPT ---' + chunk."
+}

@@ -1,0 +1,34 @@
+{
+  "id": "session_2_confidently_wrong",
+  "name": "Confidently Wrong (Dynamic Programming: Knapsack)",
+  "archetype": "confidently_wrong",
+  "problem": "Solve 0/1 Knapsack with weights W and values V. Formulate the recurrence relation.",
+  "course": "Algorithms & Data Structures",
+  "expected_outcome": "Student commits a greedy sorting error. Hysteresis validates the mistake across ticks, escalating from Rung 1 (Underline) to Rung 2 (Socratic question).",
+  "snapshots": [
+    {
+      "step": 1,
+      "t_offset_sec": 0.0,
+      "text": "# 0/1 Knapsack problem\n# I will just sort items by value-to-weight ratio\n",
+      "pause_sec": 1.5
+    },
+    {
+      "step": 2,
+      "t_offset_sec": 3.0,
+      "text": "# 0/1 Knapsack problem\n# I will just sort items by value-to-weight ratio\nitems.sort(key=lambda x: x.val / x.wt, reverse=True)\n",
+      "pause_sec": 2.2
+    },
+    {
+      "step": 3,
+      "t_offset_sec": 6.5,
+      "text": "# 0/1 Knapsack problem\n# I will just sort items by value-to-weight ratio\nitems.sort(key=lambda x: x.val / x.wt, reverse=True)\n# Now greedily pick the highest ratio item while remaining capacity allows\nfor item in items:\n    if capacity >= item.wt:\n        take(item)\n",
+      "pause_sec": 3.5
+    },
+    {
+      "step": 4,
+      "t_offset_sec": 11.0,
+      "text": "# 0/1 Knapsack problem\n# I will just sort items by value-to-weight ratio\nitems.sort(key=lambda x: x.val / x.wt, reverse=True)\n# Now greedily pick the highest ratio item while remaining capacity allows\nfor item in items:\n    if capacity >= item.wt:\n        take(item)\n# This is guaranteed optimal because ratio is maximized\n",
+      "pause_sec": 4.0
+    }
+  ]
+}

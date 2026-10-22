@@ -1,0 +1,23 @@
+{
+  "name": "tool-argument-guardrail",
+  "hackathon_tag": "#guardrails",
+  "model": "StrandsAgents/strands-decider-2B-hobson-v19",
+  "how_to_use": "Question text is generated per tool argument at call time. Use inside a Strands InterventionHandler (see strands_agent.py).",
+  "question": {
+    "type": "noul",
+    "instructions": "Did the student mention or clearly ask about 'Dynamic Programming' (the value used for 'concept_name' in the call to get_concept_mastery)?",
+    "criteria": {
+      "true": "'Dynamic Programming' appears in, or is clearly implied by, what the student said",
+      "false": "the student never mentioned 'Dynamic Programming'; the agent guessed it"
+    }
+  },
+  "state_shape": "see P.build_state(...) - only the user's/student's own words",
+  "threshold": {
+    "key": "grounded",
+    "default": 0.65,
+    "adapts_from_feedback": true,
+    "triggers_when": "low"
+  },
+  "wiring": "from backend.app.decider import patterns as P\nfrom backend.app.decider.client import get_client\nfrom backend.app.decider.calibration import get_thresholds\n\nthr = get_thresholds()\ndecisions, ask = P.run_patterns(get_client(), state, [P.grounded_tool_arg(tool, arg, value)  # built per call by DeciderToolGuard], thr.get)   # ONE round trip for all patterns\nd = decisions[\"grounded_concept_name\"]\nif d.triggered:          # plain Python owns the control flow\n    ...                  # return Guide(feedback='Ask the student which concept they mean')\n",
+  "note": "Question text is generated per tool argument at call time. Use inside a Strands InterventionHandler (see strands_agent.py)."
+}

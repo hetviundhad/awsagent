@@ -1,0 +1,40 @@
+{
+  "id": "session_1_productive_struggle",
+  "name": "Productive Struggler (Graph Theory / BFS)",
+  "archetype": "productive_struggler",
+  "problem": "Given an unweighted graph, find the shortest path from start to target. State base case and queue invariant.",
+  "course": "Algorithms & Data Structures",
+  "expected_outcome": "Tutor stays silent throughout because student is engaged in active reasoned working (shield protected).",
+  "snapshots": [
+    {
+      "step": 1,
+      "t_offset_sec": 0.0,
+      "text": "# Finding shortest path in unweighted graph\n# We should use BFS because edges have uniform weight 1\n",
+      "pause_sec": 1.2
+    },
+    {
+      "step": 2,
+      "t_offset_sec": 2.5,
+      "text": "# Finding shortest path in unweighted graph\n# We should use BFS because edges have uniform weight 1\nfrom collections import deque\nqueue = deque([start])\nvisited = {start: None}\n",
+      "pause_sec": 2.0
+    },
+    {
+      "step": 3,
+      "t_offset_sec": 5.8,
+      "text": "# Finding shortest path in unweighted graph\n# We should use BFS because edges have uniform weight 1\nfrom collections import deque\nqueue = deque([start])\nvisited = {start: None}\nwhile queue:\n    curr = queue.popleft()\n    if curr == target:\n        break\n",
+      "pause_sec": 3.1
+    },
+    {
+      "step": 4,
+      "t_offset_sec": 9.4,
+      "text": "# Finding shortest path in unweighted graph\n# We should use BFS because edges have uniform weight 1\nfrom collections import deque\nqueue = deque([start])\nvisited = {start: None}\nwhile queue:\n    curr = queue.popleft()\n    if curr == target:\n        break\n    for neighbor in graph[curr]:\n        if neighbor not in visited:\n            visited[neighbor] = curr\n            queue.append(neighbor)\n",
+      "pause_sec": 2.8
+    },
+    {
+      "step": 5,
+      "t_offset_sec": 13.0,
+      "text": "# Finding shortest path in unweighted graph\n# We should use BFS because edges have uniform weight 1\nfrom collections import deque\nqueue = deque([start])\nvisited = {start: None}\nwhile queue:\n    curr = queue.popleft()\n    if curr == target:\n        break\n    for neighbor in graph[curr]:\n        if neighbor not in visited:\n            visited[neighbor] = curr\n            queue.append(neighbor)\n# Reconstruct path by following visited parent pointers back to start\npath = []\ncurr = target\nwhile curr is not None:\n    path.append(curr)\n    curr = visited[curr]\nreturn path[::-1]\n",
+      "pause_sec": 4.0
+    }
+  ]
+}

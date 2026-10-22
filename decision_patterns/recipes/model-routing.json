@@ -1,0 +1,23 @@
+{
+  "name": "model-routing",
+  "hackathon_tag": "#model-routing",
+  "model": "StrandsAgents/strands-decider-2B-hobson-v19",
+  "how_to_use": "Cheap, high-frequency decision: ~one forward pass instead of an LLM call per message.",
+  "question": {
+    "type": "noul",
+    "instructions": "Does a good answer need multi-step reasoning, a derivation, a code design, or comparing several concepts?",
+    "criteria": {
+      "true": "a correct answer requires several reasoning steps, a derivation, code, or a comparison",
+      "false": "a short definition, recall or single-concept explanation is enough"
+    }
+  },
+  "state_shape": "see P.build_state(...) - only the user's/student's own words",
+  "threshold": {
+    "key": "complexity",
+    "default": 0.6,
+    "adapts_from_feedback": true,
+    "triggers_when": "high"
+  },
+  "wiring": "from backend.app.decider import patterns as P\nfrom backend.app.decider.client import get_client\nfrom backend.app.decider.calibration import get_thresholds\n\nthr = get_thresholds()\ndecisions, ask = P.run_patterns(get_client(), state, [P.complexity_router()], thr.get)   # ONE round trip for all patterns\nd = decisions[\"complexity\"]\nif d.triggered:          # plain Python owns the control flow\n    ...                  # use the deep model tier; otherwise the fast tier\n",
+  "note": "Cheap, high-frequency decision: ~one forward pass instead of an LLM call per message."
+}

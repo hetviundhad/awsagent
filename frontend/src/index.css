@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #FAF8F5;
+    color: #16130F;
+  }
+  
+  body {
+    background-color: #FAF8F5;
+    color: #16130F;
+    font-family: 'Inter', 'Instrument Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Selection: real yellow highlighter pen over printed ink */
+  ::selection {
+    background-color: #FFE45C;
+    color: #16130F;
+  }
+
+  /* Crisp editorial headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: #16130F;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Dotted and Grid Paper Backgrounds */
+.bg-paper-dots {
+  background-image: radial-gradient(#D6D0C5 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-paper-grid {
+  background-image: 
+    linear-gradient(to right, rgba(234, 230, 223, 0.6) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(234, 230, 223, 0.6) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Highlighter Pen Signature Moments */
+.highlighter-pen {
+  background: linear-gradient(104deg, rgba(255, 228, 92, 0) 0.9%, rgba(255, 228, 92, 0.85) 2.4%, rgba(255, 228, 92, 0.75) 94.6%, rgba(255, 228, 92, 0) 99.2%);
+  border-radius: 2px;
+  padding: 0 4px;
+}
+
+.highlighter-marker {
+  position: relative;
+  display: inline-block;
+}
+.highlighter-marker::after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  bottom: 1px;
+  height: 38%;
+  background: #FFE45C;
+  opacity: 0.75;
+  z-index: -1;
+  border-radius: 2px;
+}
+
+/* Margin Note Annotation Style */
+.margin-note {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #5E5A52;
+  border-left: 2px solid #FFE45C;
+  padding-left: 8px;
+}
+
+/* Editorial Paper Card */
+.card-editorial {
+  background-color: #FFFFFF;
+  border: 1px solid #EAE6DF;
+  border-radius: 0.875rem;
+  box-shadow: 0 1px 3px 0 rgba(22, 19, 15, 0.04);
+  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.2s ease;
+}
+
+.card-editorial:hover {
+  border-color: #D6D0C5;
+  box-shadow: 0 8px 20px -4px rgba(22, 19, 15, 0.08);
+}
+
+/* Warm paper scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9D4CC;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4BEB4;
+}
+
+/* Accessible interactive focus ring */
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid #1D4ED8;
+  outline-offset: 2px;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "policy",
+  "hackathon_tag": "#policy",
+  "model": "StrandsAgents/strands-decider-2B-hobson-v19",
+  "how_to_use": "Option descriptions are generated from the live course, so the same recipe adapts to any subject. 'none_of_these' is mandatory.",
+  "question": {
+    "type": "choice",
+    "instructions": "What does the student need from their tutor right now?",
+    "criteria": {
+      "explain_concept": "the student wants a concept from Algorithms explained or clarified (Dynamic Programming, Graph Algorithms)",
+      "worked_example": "the student asks for an example, code, an analogy or a step-by-step walkthrough of something",
+      "quiz_request": "the student asks to be quizzed, tested or given practice questions",
+      "homework_answer": "the student pastes an assignment or exam question and just wants the final answer to hand in",
+      "course_logistics": "the student asks what the course covers, the syllabus, chapters, deadlines or materials",
+      "emotional_support": "the student expresses stress, anxiety, burnout or feeling overwhelmed about studying",
+      "off_topic": "the request is unrelated to Algorithms and to studying (entertainment, chit-chat, news, other subjects)",
+      "none_of_these": "does not fit any option above"
+    }
+  },
+  "state_shape": "see P.build_state(...) - only the user's/student's own words",
+  "threshold": {
+    "key": "policy",
+    "default": 0.5,
+    "adapts_from_feedback": true,
+    "triggers_when": "top choice confidence >= threshold"
+  },
+  "wiring": "from backend.app.decider import patterns as P\nfrom backend.app.decider.client import get_client\nfrom backend.app.decider.calibration import get_thresholds\n\nthr = get_thresholds()\ndecisions, ask = P.run_patterns(get_client(), state, [P.pedagogy_policy(course_name, topic_names)], thr.get)   # ONE round trip for all patterns\nd = decisions[\"policy\"]\nif d.triggered:          # plain Python owns the control flow\n    ...                  # map d.action -> answer | quiz | socratic | support | redirect\n",
+  "note": "Option descriptions are generated from the live course, so the same recipe adapts to any subject. 'none_of_these' is mandatory."
+}

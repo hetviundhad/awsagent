@@ -1,0 +1,23 @@
+{
+  "name": "clarity",
+  "hackathon_tag": "#policy",
+  "model": "StrandsAgents/strands-decider-2B-hobson-v19",
+  "how_to_use": "Triggers when P(specific) is LOW. Show only STUDENT messages in the state.",
+  "question": {
+    "type": "noul",
+    "instructions": "Is the student's NEW message specific enough to answer well without guessing which concept they mean?",
+    "criteria": {
+      "true": "the message names a concept, problem or task clearly, or it clearly follows from the earlier student messages",
+      "false": "the message is too vague or refers to something unnamed (e.g. 'explain it', 'what about that')"
+    }
+  },
+  "state_shape": "see P.build_state(...) - only the user's/student's own words",
+  "threshold": {
+    "key": "clarity",
+    "default": 0.35,
+    "adapts_from_feedback": true,
+    "triggers_when": "low"
+  },
+  "wiring": "from backend.app.decider import patterns as P\nfrom backend.app.decider.client import get_client\nfrom backend.app.decider.calibration import get_thresholds\n\nthr = get_thresholds()\ndecisions, ask = P.run_patterns(get_client(), state, [P.clarity_check()], thr.get)   # ONE round trip for all patterns\nd = decisions[\"clarity\"]\nif d.triggered:          # plain Python owns the control flow\n    ...                  # ask ONE clarifying question instead of guessing (Guide-style)\n",
+  "note": "Triggers when P(specific) is LOW. Show only STUDENT messages in the state."
+}
